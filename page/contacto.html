@@ -25,11 +25,34 @@
     <br>
     <br>
 <form method="" action="">
-    Nombre: <input type="text" name="Nombre">
-    Apellido: <input type="text" name="Apellido">
+    Nombre: <input type="text" name="Nombre" placeholder="Nombre">
+    Apellido: <input type="text" name="Apellido" placeholder="Apellido">
     <br>
-    <input type="submit" value="enviar">
-    <button type="button" class="btn btn-warning">Warning</button>
+    <br>
+    <select class="form-select" multiple aria-label="Multiple select example">
+        <option selected>Indique sexo:</option>
+        <option value="1">Masculino</option>
+        <option value="2">Femenino</option>
+        <option value="3">Otro</option>
+      </select>
+    <br>
+    <br>
+    <select class="form-select" multiple aria-label="Multiple select example">
+        <option selected>Seleccione su preferencia a continuacion:</option>
+        <option value="1">Vehiculos</option>
+        <option value="2">Motocicletas</option>
+        <option value="3">Nautica</option>
+      </select>
+    <br>
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Comments</label>
+      </div>
+      <br>
+      <br>
+    <button type="button" class="btn btn-success">enviar</button>
+    <button type="button" class="btn btn-danger">cancelar</button>
+    
 </form>
 <br>
 <br>
