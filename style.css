@@ -33,7 +33,7 @@ ul{display: flex; flex-direction: row; margin: auto;justify-content: space-evenl
 .cajas9{
     display: grid; 
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9,300px);}
+    grid-template-rows: repeat(9,300px);grid-row-gap: 10px;}
 .caja1{background-color: rgb(55, 0, 255);}
 .caja2{background-color: rgba(255, 251, 0, 0.918);}
 .caja3{background-color: rgb(8, 8, 8);} 
@@ -46,12 +46,12 @@ ul{display: flex; flex-direction: row; margin: auto;justify-content: space-evenl
 @media screen and (min-width: 321px) and (max-width: 768px)  {
 .cajas9{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; grid-column-gap: 10px;
 }  
 }
 @media screen and (min-width: 769px)   {
     .cajas9{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr; grid-column-gap: 10px;
     }  
     }
