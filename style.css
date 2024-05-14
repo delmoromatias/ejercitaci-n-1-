@@ -30,8 +30,10 @@ ul{display: flex; flex-direction: row; margin: auto;justify-content: space-evenl
     background-color:rgb(252, 248, 22) }
 .cajas¨{width: 100%;} }
 /* ejercitacion clase 7 */
-@media only screen and (min-width: 769px)
-{.cajas9{display: grid; grid-template-columns:repeat(3,1fr); grid-template-rows: repeat(3,200px);grid-row-gap: 15px; grid-column-gap: 15px ;}
+.cajas9{
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9,300px);}
 .caja1{background-color: rgb(55, 0, 255);}
 .caja2{background-color: rgba(255, 251, 0, 0.918);}
 .caja3{background-color: rgb(8, 8, 8);} 
@@ -40,17 +42,16 @@ ul{display: flex; flex-direction: row; margin: auto;justify-content: space-evenl
 .caja6{background-color: rgb(235, 188, 223);}
 .caja7{background-color: rgb(255, 0, 0);}
 .caja8{background-color: rgb(9, 255, 0);}
-.caja9{background-color: rgb(211, 206, 206);}}
-@media only screen and (min-width: 321px) and (max-width: 768px)
-{.cajas9{display: grid; grid-template-columns:repeat(2,1fr); grid-template-rows: repeat(3,200px);grid-row-gap: 15px; grid-column-gap: 15px ;}
-.caja1{background-color: rgb(124, 96, 223);}
-.caja2{background-color: rgba(0, 255, 0, 0.918);}
-.caja3{background-color: rgb(247, 17, 17);} 
-.caja4{background-color: rgb(255, 251, 0);} 
-.caja5{background-color: rgb(55, 0, 255);} 
-.caja6{background-color: rgb(245, 100, 17);}}
-@media only screen and (max-width: 320px)
-{.cajas9{display: grid; grid-template-columns:repeat(1,1fr); grid-template-rows: repeat(3,200px);grid-row-gap: 15px;}
-.caja1{background-color: rgb(250, 6, 6);}
-.caja2{background-color: rgba(4, 0, 255, 0.918);}
-.caja3{background-color: rgb(99, 28, 231);}}
+.caja9{background-color: rgb(211, 206, 206);}
+@media screen and (min-width: 321px) and (max-width: 768px)  {
+.cajas9{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}  
+}
+@media screen and (min-width: 769px)   {
+    .cajas9{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }  
+    }
